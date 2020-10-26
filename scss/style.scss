@@ -38,7 +38,7 @@
       }
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
     }
     &__text {
       margin-left: 16px;
@@ -64,14 +64,16 @@
 //content
 
 .content {
+  .pink_ellips {
+    top: 260px;
+    left: 65px;
+    position: relative;
+  }
   .hero {
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
-    .pink_ellips {
-      margin-right: 100px;
-      position: relative;
-    }
+   
     &__text {
       text-align: left;
       font-family: 'Roboto Slab', sans-serif;
@@ -139,20 +141,9 @@
     }
     &__img {
       width: 50%;
-      position: relative;
-      .background_section {
-        background-image: url('/img/hero-background.png');
-        width: 100%;
-        height: 551px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        img {
-          transform: translateX(38%);
-          width: 60%;
-          min-height: 80%;
-        }
-      }
+    }
+    &__girl {
+      width: 100%;
     }
   }
 }
