@@ -1,0 +1,131 @@
+@import 'config';
+@import 'responsive';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1168px;
+  margin: 0 auto;
+  @media #{$mid_device} {
+    max-width: 992px;
+  }
+  @media #{$tablet_device} {
+    max-width: 768px;
+  }
+  @media #{$mobile_device} {
+    max-width: 100%;
+  }
+}
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    opacity: 0.9;
+    &__wrapper {
+      &_logo {
+        display: flex;
+        align-items: center;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &__text {
+      margin-left: 16px;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 130%;
+      color: #141e32;
+    }
+    &__btn {
+      border: 1px solid #d67470;
+      box-sizing: border-box;
+      border-radius: 50px;
+      color: #d67470;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 130%;
+      background: transparent;
+      padding: 24px 60px;
+    }
+  }
+}
+
+//content
+
+.content {
+  .hero {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    &__text {
+      text-align: left;
+      font-family: 'Roboto Slab', sans-serif;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 100%;
+      color: #61a88e;
+    }
+    &__subtext {
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: #141e32;
+    }
+    &__desc {
+      width: 47%;
+      .discount {
+        display: flex;
+        justify-content: center;
+        &_day,
+        &_hour,
+        &_minute,
+        &_second {
+          display: flex;
+          margin-right: 14px;
+          span {
+            background: linear-gradient(
+              180deg,
+              #61a88e 0%,
+              #8cbcab 0.01%,
+              #8cbcab 100%
+            );
+            border-radius: 10px 10px 8px 8px;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 100%;
+            text-align: center;
+            color: #ffffff;
+            margin-right: 4px;
+            padding: 12px;
+          }
+        }
+      }
+    }
+    &__btn {
+      background: #d67470;
+      border-radius: 100px;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 130%;
+      color: #ffffff;
+      padding: 22px 16px;
+      border: none;
+    }
+    &__img {
+      width: 40%;
+    }
+  }
+}
