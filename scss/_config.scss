@@ -4,6 +4,137 @@ $light-color: #f4f4f4;
 $white-color: #ffffff;
 $danger-color: #dc3545;
 $success-color: #28a745;
-$green-color: #3D9776;
+$green-color: #3d9776;
 $light-orange: #e6b459;
 $dark-orange: #bf9850;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.section-title {
+  font-family: 'Roboto' 'Slab', 'Arial' 'Black',sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0 0 30px;
+  padding: 0 15px;
+}
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.ai-center {
+  align-items: center;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+.j-center {
+  justify-content: center;
+}
+.f-col {
+  flex-direction: column;
+}
+.flex-inline {
+  display: inline-flex;
+}
+.f-wrap{
+  flex-wrap: wrap;
+}
+.relative{
+  position: relative;
+}
+.text-left{
+  text-align: left;
+}
+.no-padding{
+  padding: 0 !important;
+}
