@@ -7,6 +7,11 @@ $success-color: #28a745;
 $green-color: #3d9776;
 $light-orange: #e6b459;
 $dark-orange: #bf9850;
+
+.primary-color {
+  color: #61a88e;
+}
+
 html,
 body,
 div,
@@ -97,10 +102,12 @@ video {
 }
 
 .section-title {
-  font-family: 'Roboto' 'Slab', 'Arial' 'Black',sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  margin: 0 0 30px;
+  font-family: 'Roboto Slab',sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 100%;
+  color: #141e32;
+  margin: 0 0 50px;
   padding: 0 15px;
 }
 .text-center {
@@ -126,15 +133,18 @@ video {
 .flex-inline {
   display: inline-flex;
 }
-.f-wrap{
+.f-wrap {
   flex-wrap: wrap;
 }
-.relative{
+.relative {
   position: relative;
 }
-.text-left{
+.text-left {
   text-align: left;
 }
-.no-padding{
+.no-padding {
   padding: 0 !important;
+}
+.section {
+  overflow: hidden;
 }

@@ -1,5 +1,198 @@
-@media #{$large_device}{
-    .will-learn__item{
-        width: 260px;
+.header-wrapper {
+  @media #{$mobile_device} {
+    flex-wrap: wrap;
+    padding: -5px 0 0;
+    &__btn {
+      border-radius: 50px;
+      border-radius: 50px;
+      padding: 13px 66px;
+      margin: -10px 77px;
     }
+  }
+}
+
+.hero {
+  &-bg {
+    @media #{$tablet_device,$mobile_device} {
+      display: none;
+    }
+  }
+  &__desc {
+    .counter {
+      @media #{$mobile_device} {
+        flex-direction: column;
+      }
+    }
+  }
+  &__btn {
+    padding: 18px 60px;
+  }
+}
+
+.course {
+  @media #{$tablet_device} {
+    &__wrapper {
+      flex-wrap: nowrap;
+    }
+    &__image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex: 250px 0 0;
+    }
+    &__info {
+      padding: 20px 0 0 50px;
+    }
+    .custom-select {
+      width: 400px;
+    }
+  }
+  @media #{$mobile_device} {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex: 250px 0 0;
+      margin: 0 auto;
+    }
+    .custom-select {
+      width: 300px;
+    }
+    &__info{
+        padding: 40px 0 0;
+    }
+  }
+}
+.tariff {
+  @media #{$tablet_device,$mobile_device} {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__item {
+      width: 350px;
+    }
+  }
+}
+.will-learn {
+  @media #{$tablet_device} {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 340px;
+    }
+  }
+  @media #{$mobile_device} {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__item {
+      width: 340px;
+    }
+  }
+}
+
+.how-to {
+  @media #{$tablet_device,$mobile_device} {
+    .tab {
+      flex-direction: column;
+    }
+  }
+  @media #{$mobile_device} {
+    .tab {
+      position: relative;
+      height: 398px;
+      z-index: 5;
+      display: block;
+    }
+    &__title {
+      width: 350px;
+    }
+    &__laptop {
+      width: 290px;
+      height: 175px;
+      &-content {
+        width: 220px;
+        height: 140px;
+        top: 10px;
+        left: 34px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.comforts {
+  &-wrap {
+    // flex-direction: column;
+  }
+  @media #{$tablet_device} {
+    &__item {
+      width: 50%;
+    }
+  }
+  @media #{$mobile_device} {
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+.author {
+  @media #{$mobile_device} {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__bg {
+      width: 380px;
+      margin: 0 auto 40px;
+    }
+  }
+}
+
+.comment {
+  @media #{$tablet_device,$mobile_device} {
+    &-bg {
+      order: 1;
+    }
+    &-girlbg {
+      display: none;
+    }
+  }
+  @media #{$mobile_device} {
+    &-wrap {
+      width: 277px;
+      position: relative;
+      padding: 70px 20px;
+    }
+  }
+}
+
+.start {
+  @media #{$mobile_device} {
+    &-wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-item {
+      width: 100%;
+      margin: 0 0 28px;
+    }
+    .counter{
+        flex-wrap: wrap;
+    }
+  }
+}
+
+@media #{$mobile_device} {
+  .section-title {
+    font-size: 24px;
+  }
 }

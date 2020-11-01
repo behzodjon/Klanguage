@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/style.min.css" />
     <link rel="stylesheet" href="/dist/css/normalize.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+      integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
@@ -23,473 +33,568 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__wrapper">
-        <img
-          src="/assets/transparent/top-navcorner.svg"
-          alt=""
-          class="header__corner_svg"
-        />
-        <nav class="navbar">
-          <div class="container navbar__wrapper">
-            <div class="navbar__wrapper_logo">
-              <img
-                src="/assets/transparent/logo.svg"
-                alt="logo"
-                class="navbar__logo"
-              />
-              <p class="navbar__text">Языковая онлайн-школа</p>
+    <header>
+      <div class="container">
+        <div class="header-wrapper flex j-between ai-center">
+          <div class="flex-inline ai-center">
+            <div class="header-wrapper__logo">
+              <div class="navbar__wrapper_logo">
+                <img src="/assets/transparent/logo.svg" alt="logo" />
+              </div>
             </div>
-            <button class="navbar__btn">Консултация</button>
+            <div class="header-wrapper__text">Языковая онлайн-школа</div>
           </div>
-        </nav>
-        <!-- /.navbar -->
+          <div>
+            <button class="header-wrapper__btn">Консултация</button>
+          </div>
+        </div>
+        <!-- /.header__wrapper -->
       </div>
-      <!-- /.header__wrapper -->
     </header>
 
-    <div class="content">
-      <img
-        class="pink_ellips"
-        src="/assets/transparent/pink_ellips.svg"
-        alt=""
-      />
-      <main class="hero container">
-        <section class="hero__desc">
-          <h1 class="hero__text">
-            Преодолей языковый <br />
-            барьер c первого <br />
-            занятия
-          </h1>
-          <p class="hero__subtext">Начни уже сегодня, пока действует скидка!</p>
-          <div class="discount">
-            <div class="discount_day">
-              <p>Дни</p>
-              <div class="dwrap">
-                <span>0</span>
-                <span>2</span>
-              </div>
-            </div>
-            <div class="discount_hour">
-              <p>Часы</p>
-              <div class="dwrap">
-                <span>2</span>
-                <span>4</span>
-              </div>
-            </div>
-            <div class="discount_minute">
-              <p>Минуты</p>
-              <div class="dwrap">
-                <span>1</span>
-                <span>1</span>
-              </div>
-            </div>
-            <div class="discount_second">
-              <p>Секунды</p>
-              <div class="dwrap">
-                <span>0</span>
-                <span>5</span>
-              </div>
-            </div>
-          </div>
-          <button class="hero__btn">Забрать курс со скидкой</button>
-        </section>
-        <section class="hero__img">
-          <img class="hero__girl" src="/img/hero-girl.png" alt="" />
-        </section>
-      </main>
-      <!-- /.hero -->
-
-      <main class="course container">
-        <h2 class="course__title">Курс делового английского языка</h2>
-        <div class="course__wrapper">
-          <section class="course__img">
-            <img src="/img/course_img.png" alt="" />
-          </section>
-          <!-- /.course__img -->
-
-          <section class="course__desc">
-            <img
-              class="course__pinkellips"
-              src="/assets/transparent/pink_ellips.svg"
-              alt="ellips"
-            />
-            <h3 class="course__subtitle">
-              Диловой английский. Средний уровень <span>(B1)</span>
-            </h3>
-            <p>
-              Средний по сложности курс делового английсого. После прохождения
-              курса вы сможете вести деловые переговоры очно и онлайн, писать
-              e-mails, вести презинтации.
-            </p>
-            <p class="course__degree">
-              Уровень после курсов: <span> B1 </span>
-            </p>
-            <span class="course_count">Уроков: 14</span>
-            <div class="custom-select">
-              <select>
-                <option value="0">Список тем на курсе</option>
-                <option value="1">
-                  — Countable & Uncountable nouns. Thank you e-mail. Calling a
-                  supplier.
-                </option>
-                <option value="2">— Past Simple, used to. Perfect CV.</option>
-                <option value="3">
-                  — Either, neither, both, as well as. Team meetings.
-                </option>
-                <option value="4">
-                  — Broader range of intensifiers; So, such, too, enough.
-                  Work-life balance.
-                </option>
-                <option value="5">
-                  — Comparative and Superlative of adverbs. How to deal with
-                  problems.
-                </option>
-                <option value="6">
-                  — Question tags. Doing business abroad.
-                </option>
-                <option value="7">Land Rover</option>
-                <option value="8">Mercedes</option>
-                <option value="9">Mini</option>
-                <option value="10">Nissan</option>
-                <option value="11">Toyota</option>
-                <option value="12">Volvo</option>
-              </select>
-            </div>
-          </section>
-          <!-- /.course__desc -->
-        </div>
-      </main>
-      <!-- /.course -->
-      <img
-        class="greenellipse"
-        src="/assets/transparent/green_ellipse.svg"
-        alt=""
-      />
-
-      <main class="tariff container">
-        <h2 class="tariff__title">Тарифы</h2>
-        <div class="flex ai-center tariff__wrapper">
-          <div class="tariff__item base flex f-col j-between">
-            <div>
-              <h3>Базовый</h3>
-              <div class="tariff__item_price">
-                <span>2700 грн</span>
-                <b>1300 грн</b>
-              </div>
-              <ul>
-                <li>доступ к полному курсу</li>
-                <li>12 онлайн встреч с репетитором по 60 мин</li>
-                <li>проверка заданий репетитором</li>
-                <li>общение с носителем в формате переписки</li>
-                <li>доступ к чату единомышленников</li>
-              </ul>
-            </div>
-            <div class="tariff__item_bottom flex j-center ai-center">
-              <button>Начать заниматься</button>
-            </div>
-            <div class="tariff__item_bg"></div>
-          </div>
-          <div class="tariff__item standart flex f-col j-between">
-            <div>
-              <h3>СТАНДАРТНЫЙ</h3>
-              <div class="tariff__item_price">
-                <span>4000 грн</span>
-                <b>3000 грн</b>
-              </div>
-              <ul>
-                <li>доступ к полному курсу</li>
-                <li>12 онлайн встреч с репетитором по 60 мин</li>
-                <li>проверка заданий репетитором</li>
-                <li>общение с носителем в формате переписки</li>
-                <li>доступ к чату единомышленников</li>
-                <li>доступ к чату единомышленников</li>
-              </ul>
-            </div>
-            <div class="tariff__item_bottom flex j-center ai-center">
-              <button>Начать заниматься</button>
-            </div>
-            <div class="tariff__item_bg"></div>
-          </div>
-          <div class="tariff__item business flex f-col j-between">
-            <div>
-              <h3>БИЗНЕС</h3>
-              <div class="tariff__item_price">
-                <span>6000 грн</span>
-                <b>4680 грн</b>
-              </div>
-              <ul>
-                <li>доступ к полному курсу</li>
-                <li>12 онлайн встреч с репетитором по 60 мин</li>
-                <li>проверка заданий репетитором</li>
-                <li>общение с носителем в формате переписки</li>
-                <li>доступ к чату единомышленников</li>
-                <li>доступ к чату единомышленников</li>
-              </ul>
-            </div>
-            <div class="tariff__item_bottom flex j-center ai-center">
-              <button>Начать заниматься</button>
-            </div>
-            <div class="tariff__item_bg"></div>
-          </div>
-        </div>
-        <!-- /.tariff__wrapper -->
-      </main>
-      <!-- /.tariffs -->
-
-      <section class="will-learn">
-        <div class="container">
-          <div class="section-title text-center">На курсе вы научитесь</div>
+    <section class="hero">
+      <div class="container relative">
+        <div class="hero-bg"></div>
+        <div class="hero__desc flex f-col j-center">
           <div>
-            <div class="flex j-between will-learn__wrap">
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Писать резюме (CV)</p>
+            <h1>
+              Преодолей языковый <br />
+              барьер c первого <br />
+              занятия
+            </h1>
+            <p>Начни уже сегодня, пока действует скидка!</p>
+            <span class="counter flex j-center">
+              <div class="counter__item">
+                <div class="counter__label">Дни</div>
+                <div class="counter__values">
+                  <span>0</span>
+                  <span>0</span>
+                </div>
               </div>
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Проходить собеседование</p>
+              <div class="counter__item">
+                <div class="counter__label">Часы</div>
+                <div class="counter__values">
+                  <span>0</span>
+                  <span>0</span>
+                </div>
               </div>
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Писать мотивационное письмо</p>
+              <div class="counter__item">
+                <div class="counter__label">Минуты</div>
+                <div class="counter__values">
+                  <span>0</span>
+                  <span>0</span>
+                </div>
               </div>
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Вести переговоры</p>
+              <div class="counter__item">
+                <div class="counter__label">Секунды</div>
+                <div class="counter__values">
+                  <span>0</span>
+                  <span>0</span>
+                </div>
+              </div>
+            </span>
+            <button class="hero__btn">Забрать курс со скидкой</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.hero -->
+
+    <section class="course">
+      <div class="course_bg"></div>
+      <div class="container">
+        <h2 class="section-title text-center">
+          Курс делового английского языка <span>B1</span>
+        </h2>
+        <div class="course__wrapper flex">
+       <div class="course__image">
+         <img src="/img/course_ldn.jpg" alt="london">
+       </div>
+       <div class="course__info">
+          <p>
+            Средний по сложности курс делового английсого. После прохождения
+            курса вы сможете вести деловые переговоры очно и онлайн, писать
+            e-mails, вести презинтации.
+          </p>
+          <p>Уровень после курсов: <span class="primary-color"> B1 </span></p>
+          <p>Уроков: 14</p>
+          <div class="custom-select">
+            <select>
+              <option value="0">Список тем на курсе</option>
+              <option value="1">
+                — Countable & Uncountable nouns. Thank you e-mail. Calling a
+                supplier.
+              </option>
+              <option value="2">— Past Simple, used to. Perfect CV.</option>
+              <option value="3">
+                — Either, neither, both, as well as. Team meetings.
+              </option>
+              <option value="4">
+                — Broader range of intensifiers; So, such, too, enough.
+                Work-life balance.
+              </option>
+              <option value="5">
+                — Comparative and Superlative of adverbs. How to deal with
+                problems.
+              </option>
+              <option value="6">— Question tags. Doing business abroad.</option>
+              <option value="7">Land Rover</option>
+              <option value="8">Mercedes</option>
+              <option value="9">Mini</option>
+              <option value="10">Nissan</option>
+              <option value="11">Toyota</option>
+              <option value="12">Volvo</option>
+            </select>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.course -->
+
+    <section class="tariff">
+      <h2 class="section-title text-center">Тарифы</h2>
+      <div class="container">
+      <div class="flex ai-center tariff__wrapper">
+        <div class="tariff__item base flex f-col j-between">
+          <div>
+            <h3>Базовый</h3>
+            <div class="tariff__item_price">
+              <span>2700 грн</span>
+              <b>1300 грн</b>
+            </div>
+            <ul>
+              <li>доступ к полному курсу</li>
+              <li>12 онлайн встреч с репетитором по 60 мин</li>
+              <li>проверка заданий репетитором</li>
+              <li>общение с носителем в формате переписки</li>
+              <li>доступ к чату единомышленников</li>
+            </ul>
+          </div>
+          <div class="tariff__item_bottom flex j-center ai-center">
+            <button>Начать заниматься</button>
+          </div>
+          <div class="tariff__item_bg"></div>
+        </div>
+        <div class="tariff__item standart flex f-col j-between">
+          <div>
+            <h3>СТАНДАРТНЫЙ</h3>
+            <div class="tariff__item_price">
+              <span>4000 грн</span>
+              <b>3000 грн</b>
+            </div>
+            <ul>
+              <li>доступ к полному курсу</li>
+              <li>12 онлайн встреч с репетитором по 60 мин</li>
+              <li>проверка заданий репетитором</li>
+              <li>общение с носителем в формате переписки</li>
+              <li>доступ к чату единомышленников</li>
+              <li>доступ к чату единомышленников</li>
+            </ul>
+          </div>
+          <div class="tariff__item_bottom flex j-center ai-center">
+            <button>Начать заниматься</button>
+          </div>
+          <div class="tariff__item_bg"></div>
+        </div>
+        <div class="tariff__item business flex f-col j-between">
+          <div>
+            <h3>БИЗНЕС</h3>
+            <div class="tariff__item_price">
+              <span>6000 грн</span>
+              <b>4680 грн</b>
+            </div>
+            <ul>
+              <li>доступ к полному курсу</li>
+              <li>12 онлайн встреч с репетитором по 60 мин</li>
+              <li>проверка заданий репетитором</li>
+              <li>общение с носителем в формате переписки</li>
+              <li>доступ к чату единомышленников</li>
+              <li>доступ к чату единомышленников</li>
+            </ul>
+          </div>
+          <div class="tariff__item_bottom flex j-center ai-center">
+            <button>Начать заниматься</button>
+          </div>
+          <div class="tariff__item_bg"></div>
+        </div>
+      </div>
+      <!-- /.tariff__wrapper -->
+    </div>
+    </section>
+    <!-- /.tariffs -->
+
+    <section class="will-learn">
+      <div class="container">
+        <div class="section-title text-center">На курсе вы научитесь</div>
+        <div>
+          <div class="flex j-between will-learn__wrap">
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Писать резюме (CV)</p>
+            </div>
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Проходить собеседование</p>
+            </div>
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Писать мотивационное письмо</p>
+            </div>
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Вести переговоры</p>
+            </div>
+          </div>
+          <div class="flex j-between will-learn__wrap">
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Писать резюме (CV)</p>
+            </div>
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Проходить собеседование</p>
+            </div>
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Писать мотивационное письмо</p>
+            </div>
+            <div class="will-learn__item flex-inline ai-center j-center">
+              <p>Вести переговоры</p>
+            </div>
+          </div>
+          <div class="will-learn__sub">
+            <p>
+              Закончив курс, вы с легкостью, как минимум, удвоите свой чек! Ведь
+              сможете выполнить заказы зарубежных клиентов по всему миру!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.will-learn -->
+    <div id="pinContainer">
+      <section id="how-to" class="how-to">
+        <div class="section-title text-center">Как проходит обучение</div>
+        <div class="how-to__wrap">
+          <div class="tab container flex ai-center j-between">
+            <div>
+              <div id="sc1" class="how-to__title">
+                На платформе смотрим лекцию
               </div>
             </div>
-            <div class="flex j-between will-learn__wrap">
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Писать резюме (CV)</p>
+            <div>
+              <div class="how-to__laptop">
+                <div class="how-to__laptop-content">
+                  <img
+                    id="slideContainer"
+                    src="/img/laptop/Devices/file(2).jpg"
+                    alt=""
+                  />
+                  <img
+                    id="slideContainer"
+                    src="/img/laptop/Devices/file(2).jpg"
+                    alt=""
+                  />
+                  <img
+                    id="slideContainer"
+                    src="/img/laptop/Devices/file(2).jpg"
+                    alt=""
+                  />
+                  <img
+                    id="slideContainer"
+                    src="/img/laptop/Devices/file(2).jpg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Проходить собеседование</p>
-              </div>
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Писать мотивационное письмо</p>
-              </div>
-              <div class="will-learn__item flex-inline ai-center j-center">
-                <p>Вести переговоры</p>
-              </div>
-            </div>
-            <div class="will-learn__sub">
-              <p>
-                Закончив курс, вы с легкостью, как минимум, удвоите свой чек!
-                Ведь сможете выполнить заказы зарубежных клиентов по всему миру!
-              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- /.will-learn -->
-      <div id="pinContainer">
-        <section id="how-to" class="how-to">
-          <div class="section-title text-center">Как проходит обучение</div>
-          <div class="how-to__wrap">
-            <div class="container flex ai-center j-between">
-              <div>
-                <div id="sc1" class="how-to__title">
-                  На платформе смотрим лекцию
-                </div>
+    </div>
+    <!-- /.how-to -->
+    <section class="comforts">
+      <div class="section-title text-center">Дополнительные возможности</div>
+      <div class="container">
+        <div class="comforts-wrap">
+          <div class="flex j-center f-wrap">
+            <div class="comforts__item">
+              <div
+                class="comforts__item-wrap yellow flex-inline j-center ai-center"
+              >
+                <p>Чат для общения на иностранном языке</p>
               </div>
-              <div>
-                <div class="how-to__laptop">
-                  <div class="how-to__laptop-content">
-                    <img
-                      id="slideContainer"
-                      src="/img/laptop/Devices/file(2).jpg"
-                      alt=""
-                    />
-                    <img
-                      id="slideContainer"
-                      src="/img/laptop/Devices/file(2).jpg"
-                      alt=""
-                    />
-                    <img
-                      id="slideContainer"
-                      src="/img/laptop/Devices/file(2).jpg"
-                      alt=""
-                    />
-                    <img
-                      id="slideContainer"
-                      src="/img/laptop/Devices/file(2).jpg"
-                      alt=""
-                    />
-                  </div>
-                </div>
+            </div>
+            <div class="comforts__item">
+              <div class="comforts__item-wrap flex-inline j-center ai-center">
+                <p>
+                  Сервис по онлайн-переписки из учениками со всего мира на базе
+                  Cambridge Assessment
+                </p>
+              </div>
+            </div>
+            <div class="comforts__item">
+              <div class="comforts__item-wrap flex-inline j-center ai-center">
+                <p>Неограниченное количество видеоуроков с репетитором</p>
+              </div>
+            </div>
+            <div class="comforts__item">
+              <div class="comforts__item-wrap flex-inline j-center ai-center">
+                <p>Получить следующий курс бесплатно</p>
+              </div>
+            </div>
+            <div class="comforts__item">
+              <div
+                class="comforts__item-wrap yellow flex-inline j-center ai-center"
+              >
+                <p>Участие в разговорном клубе с NATIVE SPEAKER</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-      <!-- /.how-to -->
-      <section class="comforts">
-        <div class="section-title text-center">Дополнительные возможности</div>
-        <div class="container">
-          <div class="comforts-wrap">
-            <div class="flex j-center f-wrap">
-              <div class="comforts__item">
+    </section>
+    <!-- /.comforts -->
+    <section class="author">
+      <div class="container">
+        <div class="author__wrap flex">
+          <div class="relative">
+            <div class="author__bg"></div>
+          </div>
+          <div>
+            <div class="section-title text-left">Автор курса</div>
+            <div class="author__name">Каролина Александровна</div>
+            <div class="author__success text-center flex f-wrap">
+              <div>
                 <div
-                  class="comforts__item-wrap yellow flex-inline j-center ai-center"
+                  class="author__success-item flex-inline j-center ai-center"
                 >
-                  <p>Чат для общения на иностранном языке</p>
+                  <p><span>8</span>лет преподает</p>
                 </div>
-              </div>
-              <div class="comforts__item">
-                <div class="comforts__item-wrap flex-inline j-center ai-center">
+                <div
+                  class="author__success-item flex-inline j-center ai-center"
+                >
+                  <p>Знает <span>5</span> языков</p>
+                </div>
+                <div
+                  class="author__success-item flex-inline j-center ai-center"
+                >
+                  <p>Имеет <span> три</span> педагогических образования</p>
+                </div>
+                <div
+                  class="author__success-item flex-inline j-center ai-center"
+                >
+                  <p><span>Два </span> из которых - филологические</p>
+                </div>
+                <div
+                  class="author__success-item flex-inline j-center ai-center"
+                >
                   <p>
-                    Сервис по онлайн-переписки из учениками со всего мира на
-                    базе Cambridge Assessment
+                    <span>Обучалась </span> в Украине, Канаде, Франции, Польше
                   </p>
                 </div>
-              </div>
-              <div class="comforts__item">
-                <div class="comforts__item-wrap flex-inline j-center ai-center">
-                  <p>Неограниченное количество видеоуроков с репетитором</p>
-                </div>
-              </div>
-              <div class="comforts__item">
-                <div class="comforts__item-wrap flex-inline j-center ai-center">
-                  <p>Получить следующий курс бесплатно</p>
-                </div>
-              </div>
-              <div class="comforts__item">
                 <div
-                  class="comforts__item-wrap yellow flex-inline j-center ai-center"
+                  class="author__success-item flex-inline j-center ai-center"
                 >
-                  <p>Участие в разговорном клубе с NATIVE SPEAKER</p>
+                  <p>Знает как сломать языковой <span> барьер</span></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- /.comforts -->
-      <section class="author">
-        <div class="container">
-          <div class="author__wrap wrap flex">
-            <div class="relative">
-              <div class="author__bg"></div>
-            </div>
-            <div>
-              <div class="section-title text-left">Автор курса</div>
-              <div class="author__name">Каролина Александровна</div>
-              <div class="author__success text-center flex f-wrap">
-                <div>
-                  <div
-                    class="author__success-item flex-inline j-center ai-center"
-                  >
-                    <p><span>8</span>лет преподает</p>
-                  </div>
-                  <div
-                    class="author__success-item flex-inline j-center ai-center"
-                  >
-                    <p>Знает <span>5</span> языков</p>
-                  </div>
-                  <div
-                    class="author__success-item flex-inline j-center ai-center"
-                  >
-                    <p>Имеет <span> три</span> педагогических образования</p>
-                  </div>
-                  <div
-                    class="author__success-item flex-inline j-center ai-center"
-                  >
-                    <p><span>Два </span> из которых - филологические</p>
-                  </div>
-                  <div
-                    class="author__success-item flex-inline j-center ai-center"
-                  >
-                    <p>
-                      <span>Обучалась </span> в Украине, Канаде, Франции, Польше
-                    </p>
-                  </div>
-                  <div
-                    class="author__success-item flex-inline j-center ai-center"
-                  >
-                    <p>Знает как сломать языковой <span> барьер</span></p>
-                  </div>
-                </div>
+      </div>
+    </section>
+    <!-- /.author -->
+    <section class="comment">
+      <div class="container">
+        <div class="flex comment-container">
+          <div class="comment-bg flex ai-center j-center">
+            <div id="g1" class="glide">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <img src="/img/slide/1.png" alt="" />
+                  </li>
+                  <li class="glide__slide">
+                    <img src="/img/slide/1.png" alt="" />
+                  </li>
+                  <li class="glide__slide">
+                    <img src="/img/slide/2.png" alt="" />
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /.author -->
-      <section class="comment">
-        <div class="container">
-          <div class="flex comment-container">
-              <div class="comment-bg flex ai-center j-center">
-                <div id="g1" class="glide">
-                  <div class="glide__track" data-glide-el="track">
-                      <ul class="glide__slides">
-                      <li class="glide__slide"><img src="/img/slide/1.png" alt=""></li>
-                      <li class="glide__slide"><img src="/img/slide/1.png" alt=""></li>
-                      <li class="glide__slide"><img src="/img/slide/2.png" alt=""></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          <div>
+            <div class="section-title">Мнение о нашем курсе</div>
+            <div class="flex j-between">
               <div>
-                <div class="section-title">Мнение о нашем курсе </div>
-                <div class="flex j-between">
-                  <div>
-                  <div class="comment-wrap flex ai-center">
-                    <div id="g2" class="glide">
-                      <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                          <li class="glide__slide">
-                            <div class="comment__item">
-                            <p>Добрый день!
-                              Больше всего, мне нравится, 
-                              что ребёнку нравится. Есть результат, видимо потому что 
-                              есть понимание между учителем и ребёнком.</p>
+                <div class="comment-wrap flex ai-center">
+                  <div id="g2" class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                          <div class="comment__item">
+                            <p>
+                              Добрый день! Больше всего, мне нравится, что
+                              ребёнку нравится. Есть результат, видимо потому
+                              что есть понимание между учителем и ребёнком.
+                            </p>
                           </div>
                         </li>
-                          <li class="glide__slide">
-                            <div class="comment__item">
-                            <p>Добрый день!
-                              Больше всего, мне нравится, 
-                              что ребёнку нравится. Есть результат, видимо потому что 
-                              есть понимание между учителем и ребёнком.</p>
+                        <li class="glide__slide">
+                          <div class="comment__item">
+                            <p>
+                              Добрый день! Больше всего, мне нравится, что
+                              ребёнку нравится. Есть результат, видимо потому
+                              что есть понимание между учителем и ребёнком.
+                            </p>
                           </div>
                         </li>
-                          <li class="glide__slide">
-                            <div class="comment__item">
-                            <p>Добрый день!
-                              Больше всего, мне нравится, 
-                              что ребёнку нравится. Есть результат, видимо потому что 
-                              есть понимание между учителем и ребёнком.</p>
+                        <li class="glide__slide">
+                          <div class="comment__item">
+                            <p>
+                              Добрый день! Больше всего, мне нравится, что
+                              ребёнку нравится. Есть результат, видимо потому
+                              что есть понимание между учителем и ребёнком.
+                            </p>
                           </div>
                         </li>
-                        </ul>
-                      </div>
+                      </ul>
                     </div>
                   </div>
-                  <div class="comment-control flex j-between ai-center  ">
-                      <div >
-                        <svg id="left" width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M22.1781 0.169939C21.9301 0.0437222 21.6516 -0.0140285 21.3725 0.00288391C21.0934 0.0197983 20.8243 0.110737 20.5941 0.265944L0.660139 13.7667C0.456448 13.9047 0.289991 14.089 0.175022 14.3037C0.0600548 14.5185 0 14.7573 0 14.9997C0 15.2421 0.0600548 15.4809 0.175022 15.6957C0.289991 15.9104 0.456448 16.0947 0.660139 16.2328L20.5941 29.7335C20.8242 29.8892 21.0934 29.9804 21.3726 29.9972C21.6518 30.014 21.9304 29.9557 22.1782 29.8287C22.426 29.7017 22.6336 29.5108 22.7784 29.2767C22.9233 29.0425 22.9999 28.7741 23 28.5004V1.49901C23 1.22519 22.9235 0.956579 22.7786 0.722296C22.6337 0.488012 22.4261 0.296993 22.1781 0.169939Z" fill="#E5BE77"/>
-                          </svg>
-                          <svg id="right" width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.750424 29.8301C0.976903 29.9563 1.23119 30.014 1.48598 29.9971C1.74078 29.9802 1.98647 29.8893 2.19667 29.7341L20.3973 16.2333C20.5832 16.0953 20.7352 15.911 20.8402 15.6963C20.9452 15.4815 21 15.2427 21 15.0003C21 14.7579 20.9452 14.5191 20.8402 14.3043C20.7352 14.0896 20.5832 13.9053 20.3973 13.7672L2.19667 0.266508C1.98663 0.110789 1.74083 0.0196027 1.48589 0.00282279C1.23095 -0.0139571 0.976578 0.044309 0.750326 0.171312C0.524074 0.298315 0.334559 0.489215 0.202302 0.723342C0.0700454 0.957469 8.62195e-05 1.2259 1.9017e-08 1.49957V28.501C-4.20957e-05 28.7748 0.0698665 29.0434 0.202149 29.2777C0.334431 29.512 0.52404 29.703 0.750424 29.8301Z" fill="#E5BE77"/>
-                            </svg>
-                                                      
-                      </div>
+                </div>
+                <div class="comment-control flex j-between ai-center">
+                  <div>
+                    <svg
+                      id="left"
+                      width="23"
+                      height="30"
+                      viewBox="0 0 23 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.1781 0.169939C21.9301 0.0437222 21.6516 -0.0140285 21.3725 0.00288391C21.0934 0.0197983 20.8243 0.110737 20.5941 0.265944L0.660139 13.7667C0.456448 13.9047 0.289991 14.089 0.175022 14.3037C0.0600548 14.5185 0 14.7573 0 14.9997C0 15.2421 0.0600548 15.4809 0.175022 15.6957C0.289991 15.9104 0.456448 16.0947 0.660139 16.2328L20.5941 29.7335C20.8242 29.8892 21.0934 29.9804 21.3726 29.9972C21.6518 30.014 21.9304 29.9557 22.1782 29.8287C22.426 29.7017 22.6336 29.5108 22.7784 29.2767C22.9233 29.0425 22.9999 28.7741 23 28.5004V1.49901C23 1.22519 22.9235 0.956579 22.7786 0.722296C22.6337 0.488012 22.4261 0.296993 22.1781 0.169939Z"
+                        fill="#E5BE77"
+                      />
+                    </svg>
+                    <svg
+                      id="right"
+                      width="21"
+                      height="30"
+                      viewBox="0 0 21 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.750424 29.8301C0.976903 29.9563 1.23119 30.014 1.48598 29.9971C1.74078 29.9802 1.98647 29.8893 2.19667 29.7341L20.3973 16.2333C20.5832 16.0953 20.7352 15.911 20.8402 15.6963C20.9452 15.4815 21 15.2427 21 15.0003C21 14.7579 20.9452 14.5191 20.8402 14.3043C20.7352 14.0896 20.5832 13.9053 20.3973 13.7672L2.19667 0.266508C1.98663 0.110789 1.74083 0.0196027 1.48589 0.00282279C1.23095 -0.0139571 0.976578 0.044309 0.750326 0.171312C0.524074 0.298315 0.334559 0.489215 0.202302 0.723342C0.0700454 0.957469 8.62195e-05 1.2259 1.9017e-08 1.49957V28.501C-4.20957e-05 28.7748 0.0698665 29.0434 0.202149 29.2777C0.334431 29.512 0.52404 29.703 0.750424 29.8301Z"
+                        fill="#E5BE77"
+                      />
+                    </svg>
+                  </div>
+                  <div class="comment-control__dot">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
                   </div>
                 </div>
-                  <div class="comment-girlbg"></div>
-                </div>
               </div>
+
+              <div class="comment-girlbg"></div>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- /.comment -->
-    </div>
-    <!-- /.content -->
+      </div>
+    </section>
+    <!-- /.comment -->
+    <section class="start">
+      <div class="container">
+        <div class="section-title text-center">Начать заниматься</div>
+        <span class="counter flex j-center">
+          <div class="counter__item">
+            <div class="counter__label">Дни</div>
+            <div class="counter__values">
+              <span>0</span>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="counter__item">
+            <div class="counter__label">Часы</div>
+            <div class="counter__values">
+              <span>0</span>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="counter__item">
+            <div class="counter__label">Минуты</div>
+            <div class="counter__values">
+              <span>0</span>
+              <span>0</span>
+            </div>
+          </div>
+          <div class="counter__item">
+            <div class="counter__label">Секунды</div>
+            <div class="counter__values">
+              <span>0</span>
+              <span>0</span>
+            </div>
+          </div>
+        </span>
+        <div>
+          <div class="start-wrap flex j-between">
+            <div class="start-item">
+              <div class="start-item__wrap">
+                <div class="start-item__select"></div>
+                <div class="start-item__title text-center">Базовый</div>
+                <div class="start-item__price text-center">
+                  <span>2700 грн </span>
+                  <b>1300 грн </b>
+                </div>
+                <div class="start-item__bg"></div>
+              </div>
+            </div>
+            <div class="start-item standart">
+              <div class="start-item__wrap">
+                <div class="start-item__select"></div>
+                <div class="start-item__title text-center">СТАНДАРТНЫЙ</div>
+                <div class="start-item__price text-center">
+                  <span>2700 грн </span>
+                  <b>1300 грн </b>
+                </div>
+                <div class="start-item__bg"></div>
+              </div>
+            </div>
+            <div class="start-item business">
+              <div class="start-item__wrap">
+                <div class="start-item__select"></div>
+                <div class="start-item__title text-center">БИЗНЕС</div>
+                <div class="start-item__price text-center">
+                  <span>2700 грн </span>
+                  <b>1300 грн </b>
+                </div>
+                <div class="start-item__bg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="start-price flex j-center">
+            <div class="flex-inline f-col">
+              <div class="flex-inline j-between ai-center">
+                <b>К оплате:</b>
+                <span>1300 грн </span>
+              </div>
+              <button>Купить со скидкой</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.start -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+    integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+    crossorigin="anonymous"
+  ></script>
   <script src="/js/magic.js"></script>
   <script src="/js/select.js"></script>
   <script src="/js/glide.js"></script>
