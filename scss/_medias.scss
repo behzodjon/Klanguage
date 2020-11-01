@@ -6,7 +6,7 @@
       border-radius: 50px;
       border-radius: 50px;
       padding: 13px 66px;
-      margin: -10px 77px;
+      // margin: -10px 77px;
     }
   }
 }
@@ -151,8 +151,11 @@
       flex-wrap: wrap;
     }
     &__bg {
-      width: 380px;
-      margin: 0 auto 40px;
+      width: 280px;
+      // margin: 0 auto 40px;
+    }
+    &__success-item{
+      margin-right: 0;
     }
   }
 }

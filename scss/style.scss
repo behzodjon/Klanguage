@@ -49,6 +49,11 @@ html {
     line-height: 130%;
     background: transparent;
     padding: 24px 60px;
+    cursor: pointer;
+  }
+  &__btn:hover{
+    color: #fff;
+    background-color: #d67470;
   }
 }
 
