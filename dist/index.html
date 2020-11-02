@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/dist/css/normalize.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
       integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
       crossorigin="anonymous"
@@ -45,7 +49,9 @@
             <div class="header-wrapper__text">Языковая онлайн-школа</div>
           </div>
           <div>
-            <button class="header-wrapper__btn">Консултация</button>
+            <a href="#ex1" rel="modal:open" class="header-wrapper__btn"
+              >Консултация</a
+            >
           </div>
         </div>
         <!-- /.header__wrapper -->
@@ -107,46 +113,48 @@
           Курс делового английского языка <span>B1</span>
         </h2>
         <div class="course__wrapper flex">
-       <div class="course__image">
-         <img src="/img/course_ldn.jpg" alt="london">
-       </div>
-       <div class="course__info">
-          <p>
-            Средний по сложности курс делового английсого. После прохождения
-            курса вы сможете вести деловые переговоры очно и онлайн, писать
-            e-mails, вести презинтации.
-          </p>
-          <p>Уровень после курсов: <span class="primary-color"> B1 </span></p>
-          <p>Уроков: 14</p>
-          <div class="custom-select">
-            <select>
-              <option value="0">Список тем на курсе</option>
-              <option value="1">
-                — Countable & Uncountable nouns. Thank you e-mail. Calling a
-                supplier.
-              </option>
-              <option value="2">— Past Simple, used to. Perfect CV.</option>
-              <option value="3">
-                — Either, neither, both, as well as. Team meetings.
-              </option>
-              <option value="4">
-                — Broader range of intensifiers; So, such, too, enough.
-                Work-life balance.
-              </option>
-              <option value="5">
-                — Comparative and Superlative of adverbs. How to deal with
-                problems.
-              </option>
-              <option value="6">— Question tags. Doing business abroad.</option>
-              <option value="7">Land Rover</option>
-              <option value="8">Mercedes</option>
-              <option value="9">Mini</option>
-              <option value="10">Nissan</option>
-              <option value="11">Toyota</option>
-              <option value="12">Volvo</option>
-            </select>
+          <div class="course__image">
+            <img src="/img/course_ldn.jpg" alt="london" />
           </div>
-        </div>
+          <div class="course__info">
+            <p>
+              Средний по сложности курс делового английсого. После прохождения
+              курса вы сможете вести деловые переговоры очно и онлайн, писать
+              e-mails, вести презинтации.
+            </p>
+            <p>Уровень после курсов: <span class="primary-color"> B1 </span></p>
+            <p>Уроков: 14</p>
+            <div class="custom-select">
+              <select>
+                <option value="0">Список тем на курсе</option>
+                <option value="1">
+                  — Countable & Uncountable nouns. Thank you e-mail. Calling a
+                  supplier.
+                </option>
+                <option value="2">— Past Simple, used to. Perfect CV.</option>
+                <option value="3">
+                  — Either, neither, both, as well as. Team meetings.
+                </option>
+                <option value="4">
+                  — Broader range of intensifiers; So, such, too, enough.
+                  Work-life balance.
+                </option>
+                <option value="5">
+                  — Comparative and Superlative of adverbs. How to deal with
+                  problems.
+                </option>
+                <option value="6">
+                  — Question tags. Doing business abroad.
+                </option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -155,72 +163,72 @@
     <section class="tariff">
       <h2 class="section-title text-center">Тарифы</h2>
       <div class="container">
-      <div class="flex ai-center tariff__wrapper">
-        <div class="tariff__item base flex f-col j-between">
-          <div>
-            <h3>Базовый</h3>
-            <div class="tariff__item_price">
-              <span>2700 грн</span>
-              <b>1300 грн</b>
+        <div class="flex ai-center tariff__wrapper">
+          <div class="tariff__item base flex f-col j-between">
+            <div>
+              <h3>Базовый</h3>
+              <div class="tariff__item_price">
+                <span>2700 грн</span>
+                <b>1300 грн</b>
+              </div>
+              <ul>
+                <li>доступ к полному курсу</li>
+                <li>12 онлайн встреч с репетитором по 60 мин</li>
+                <li>проверка заданий репетитором</li>
+                <li>общение с носителем в формате переписки</li>
+                <li>доступ к чату единомышленников</li>
+              </ul>
             </div>
-            <ul>
-              <li>доступ к полному курсу</li>
-              <li>12 онлайн встреч с репетитором по 60 мин</li>
-              <li>проверка заданий репетитором</li>
-              <li>общение с носителем в формате переписки</li>
-              <li>доступ к чату единомышленников</li>
-            </ul>
-          </div>
-          <div class="tariff__item_bottom flex j-center ai-center">
-            <button>Начать заниматься</button>
-          </div>
-          <div class="tariff__item_bg"></div>
-        </div>
-        <div class="tariff__item standart flex f-col j-between">
-          <div>
-            <h3>СТАНДАРТНЫЙ</h3>
-            <div class="tariff__item_price">
-              <span>4000 грн</span>
-              <b>3000 грн</b>
+            <div class="tariff__item_bottom flex j-center ai-center">
+              <button>Начать заниматься</button>
             </div>
-            <ul>
-              <li>доступ к полному курсу</li>
-              <li>12 онлайн встреч с репетитором по 60 мин</li>
-              <li>проверка заданий репетитором</li>
-              <li>общение с носителем в формате переписки</li>
-              <li>доступ к чату единомышленников</li>
-              <li>доступ к чату единомышленников</li>
-            </ul>
+            <div class="tariff__item_bg"></div>
           </div>
-          <div class="tariff__item_bottom flex j-center ai-center">
-            <button>Начать заниматься</button>
-          </div>
-          <div class="tariff__item_bg"></div>
-        </div>
-        <div class="tariff__item business flex f-col j-between">
-          <div>
-            <h3>БИЗНЕС</h3>
-            <div class="tariff__item_price">
-              <span>6000 грн</span>
-              <b>4680 грн</b>
+          <div class="tariff__item standart flex f-col j-between">
+            <div>
+              <h3>СТАНДАРТНЫЙ</h3>
+              <div class="tariff__item_price">
+                <span>4000 грн</span>
+                <b>3000 грн</b>
+              </div>
+              <ul>
+                <li>доступ к полному курсу</li>
+                <li>12 онлайн встреч с репетитором по 60 мин</li>
+                <li>проверка заданий репетитором</li>
+                <li>общение с носителем в формате переписки</li>
+                <li>доступ к чату единомышленников</li>
+                <li>доступ к чату единомышленников</li>
+              </ul>
             </div>
-            <ul>
-              <li>доступ к полному курсу</li>
-              <li>12 онлайн встреч с репетитором по 60 мин</li>
-              <li>проверка заданий репетитором</li>
-              <li>общение с носителем в формате переписки</li>
-              <li>доступ к чату единомышленников</li>
-              <li>доступ к чату единомышленников</li>
-            </ul>
+            <div class="tariff__item_bottom flex j-center ai-center">
+              <button>Начать заниматься</button>
+            </div>
+            <div class="tariff__item_bg"></div>
           </div>
-          <div class="tariff__item_bottom flex j-center ai-center">
-            <button>Начать заниматься</button>
+          <div class="tariff__item business flex f-col j-between">
+            <div>
+              <h3>БИЗНЕС</h3>
+              <div class="tariff__item_price">
+                <span>6000 грн</span>
+                <b>4680 грн</b>
+              </div>
+              <ul>
+                <li>доступ к полному курсу</li>
+                <li>12 онлайн встреч с репетитором по 60 мин</li>
+                <li>проверка заданий репетитором</li>
+                <li>общение с носителем в формате переписки</li>
+                <li>доступ к чату единомышленников</li>
+                <li>доступ к чату единомышленников</li>
+              </ul>
+            </div>
+            <div class="tariff__item_bottom flex j-center ai-center">
+              <button>Начать заниматься</button>
+            </div>
+            <div class="tariff__item_bg"></div>
           </div>
-          <div class="tariff__item_bg"></div>
         </div>
+        <!-- /.tariff__wrapper -->
       </div>
-      <!-- /.tariff__wrapper -->
-    </div>
     </section>
     <!-- /.tariffs -->
 
@@ -352,7 +360,7 @@
     <section class="author">
       <div class="container">
         <div class="author__wrap flex">
-          <div >
+          <div>
             <div class="author__bg"></div>
           </div>
           <div>
@@ -584,6 +592,30 @@
       </div>
     </section>
     <!-- /.start -->
+    <div>
+      <div id="ex1" class="modal">
+        <div class="modal-body">
+        <h2 class="text-center">Задайте свой вопрос</h2>
+        <form  class="form">
+          <div class="form-item">
+            <label for="name">ФИО</label>
+            <input type="text" placeholder="Иванов Иван Иваныч">
+          </div>
+          <div class="form-item">
+            <label for="tel">Номер</label>
+            <input type="text" placeholder="+380 (**) 123-45-67">
+          </div>
+          <div class="form-item">
+            <label for="quest">Вопрос</label>
+            <textarea name="quest" id="" cols="30" rows="8"></textarea>
+          </div>
+          <div class="text-center">
+            <button>Задать вопрос</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -595,7 +627,9 @@
     integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script src="/js/magic.js"></script>
   <script src="/js/select.js"></script>
   <script src="/js/glide.js"></script>
+  <script src="/js/script.js"></script>
 </html>

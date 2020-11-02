@@ -16,6 +16,9 @@
     @media #{$tablet_device,$mobile_device} {
       display: none;
     }
+    @media #{$mid_device} {
+      right: -40px;
+    }
   }
   &__desc {
     .counter {
