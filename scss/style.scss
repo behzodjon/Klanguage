@@ -224,6 +224,7 @@ html {
       position: relative;
       padding: 19px 27px;
       top: -25px;
+      cursor: pointer;
     }
     &.base {
       height: 630px;
@@ -245,6 +246,10 @@ html {
       }
       .tariff__item_bottom button {
         color: #61a88e;
+      }
+      .tariff__item_bottom button:hover {
+        color: #ffffff;
+        background-color:#61a88e;
       }
       .tariff__item_bg {
         background: url('/assets/transparent/base_footersvg.svg');
@@ -278,6 +283,10 @@ html {
       .tariff__item_bottom button {
         color: #e5be77;
       }
+      .tariff__item_bottom button:hover {
+        color: #ffffff;
+        background-color:#e5be77;
+      }
       .tariff__item_bg {
         background: url('/assets/transparent/standart_footersvg.svg');
         background-size: cover;
@@ -310,6 +319,11 @@ html {
       .tariff__item_bottom button {
         color: #dc9996;
       }
+      .tariff__item_bottom button:hover {
+        color: #ffffff;
+        background-color: #dc9996;
+      }
+      
       .tariff__item_bg {
         background: url('/assets/transparent/business_footersvg.svg');
         background-size: cover;
